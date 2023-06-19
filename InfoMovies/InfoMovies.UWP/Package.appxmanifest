@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="0F49712D-9CFE-4BE2-B101-CBAC6C2EFA6A"
-    Publisher="CN=5FAB0A74-4BC4-4629-A33B-B1FA38AB0718"
+    Name="ME.InfoMoviesV1"
+    Publisher="CN=Admin"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="ec0cc741-fd3e-485c-81be-68815c480690" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>InfoMovies.UWP</DisplayName>
-    <PublisherDisplayName>5FAB0A74-4BC4-4629-A33B-B1FA38AB0718</PublisherDisplayName>
+    <DisplayName>InfoMovies</DisplayName>
+    <PublisherDisplayName>mediaexplorer</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -32,7 +32,7 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="InfoMovies.UWP.App">
       <uap:VisualElements
-        DisplayName="InfoMovies.UWP"
+        DisplayName="InfoMovies"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
         Description="InfoMovies.UWP"
@@ -45,6 +45,9 @@
           </uap:ShowNameOnTiles>
         </uap:DefaultTile>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="landscape"/>
+          <uap:Rotation Preference="portrait"/></uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>

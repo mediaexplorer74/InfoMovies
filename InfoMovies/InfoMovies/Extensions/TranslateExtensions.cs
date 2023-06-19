@@ -50,7 +50,8 @@ namespace InfoMovies.Extensions
             if (string.IsNullOrEmpty(Text))
                 return string.Empty;
 
-            var translation = _resourceManager.Value.GetString(Text, _cultureInfo);
+            //RND
+            string translation = Text;//_resourceManager.Value.GetString(Text, _cultureInfo);
             if (translation == null)
             {
                 if(Debugger.IsAttached)

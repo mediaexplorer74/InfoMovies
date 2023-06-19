@@ -6,10 +6,7 @@ Application to show the list of upcoming movies
 
 ## Screenshots
 ![](Images/shot1.png)
-![](Images/shot2.png)
 ![](Images/shot3.png)
-![](Images/shot4.png)
-
 
 ## TODO
 - Do more exploring Core of this project

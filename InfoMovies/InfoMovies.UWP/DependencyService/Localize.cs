@@ -21,9 +21,9 @@ namespace InfoMovies.UWP.DependencyService
         public CultureInfo GetCurrentCultureInfo()
         {
             var netLanguage = "en";
-            var androidLocale = Java.Util.Locale.Default;
+            //var androidLocale = Java.Util.Locale.Default;
 
-            netLanguage = AndroidToDotnetLanguage(androidLocale.ToString().Replace("_", "-"));
+            netLanguage = "en";//AndroidToDotnetLanguage(androidLocale.ToString().Replace("_", "-"));
             CultureInfo ci = null;
 
             try

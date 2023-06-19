@@ -137,9 +137,13 @@ namespace InfoMovies.Providers
 
         public static async Task InitializeGenreList()
         {
-            var currentCulture = localize.GetCurrentCultureInfo();
-            var language = currentCulture.Name;
-            GenreCollection = await client.GetAsync<TMDbGenreCollection>($"genre/movie/list?api_key={API_KEY}&language={language}");
+            System.Globalization.CultureInfo currentCulture = localize.GetCurrentCultureInfo();
+            string language = currentCulture.Name;
+            GenreCollection = 
+                await client.GetAsync<TMDbGenreCollection>(
+                    $"genre/movie/list?api_key={API_KEY}&language={language}");
+
+
         }
 
         #endregion

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FFImageLoading.Forms.Platform;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -42,7 +43,7 @@ namespace InfoMovies.UWP
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {
-                this.DebugSettings.EnableFrameRateCounter = true;
+               // this.DebugSettings.EnableFrameRateCounter = true;
             }
 #endif
 
@@ -56,7 +57,10 @@ namespace InfoMovies.UWP
                 rootFrame = new Frame();
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
+
                 Xamarin.Forms.Forms.Init(e);
+
+                CachedImageRenderer.Init(); //RnD
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {

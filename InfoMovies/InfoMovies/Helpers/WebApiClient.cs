@@ -53,8 +53,10 @@ namespace InfoMovies.Helpers
                     LogHelper.LogException(ex);
                     return default(T);
                 }
+                return default(T);
             }
         }
+
 
         public async Task<Stream> GetStreamAsync(string requestUri)
         {

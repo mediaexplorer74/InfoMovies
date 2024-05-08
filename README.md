@@ -25,9 +25,9 @@ Application to show the list of upcoming movies
 
 
 ## References / Learning Video
-- [https://github.com/felipebaltazar](Felipe Baltazar)
+- https://github.com/felipebaltazar Felipe Baltazar
 - https://www.youtube.com/watch?v=1OtJXIIvt_Y
-- [https://github.com/felipebaltazar/InfoMovies/](Original InfoMovies project)
+- https://github.com/felipebaltazar/InfoMovies/ Original InfoMovies project
 
 ## ..
 As is. No support. DIY
